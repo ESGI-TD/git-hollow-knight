@@ -1,0 +1,30 @@
+name: "Feature"
+description: Create a ticket for a new feature
+title: "[FEATURE] - <title>"
+labels: ["feature"]
+body:
+  - type: input
+    id: start_date
+    attributes:
+      label: "Start Date"
+      description: Start date of development
+      placeholder: "YYYY/mm/dd"
+    validations:
+      required: false
+  - type: input
+    id: path
+    attributes:
+      label: "Path"
+      description: Modified file/folder path
+      placeholder: hollow-knight/
+      value: hollow-knight/
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "Description"
+      description: "Add a desription for your feature request"
+      placeholder: "Description here…"
+    validations:
+      required: true
