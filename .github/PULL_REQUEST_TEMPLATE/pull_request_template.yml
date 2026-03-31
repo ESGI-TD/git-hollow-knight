@@ -1,0 +1,11 @@
+name: Pull Request Feature/Fix
+description: Select between Features or Fix request you nedd
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: description
+      placeholder: Describe your pull request
+    validations:
+      required: true
