@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "noEmit": true,
     "target": "ES6", // Version JS cible : ES6+ (let, const, arrow functions)
     "module": "ESNext", // Système de modules : commonjs pour Node, "ESNext" pour front moderne
     "strict": true, // Active toutes les vérifications strictes (type checking strict)
@@ -9,6 +10,6 @@
     "outDir": "./dist", // Répertoire de sortie pour le JS compilé
     "rootDir": "./src" // Répertoire racine des fichiers TS
   },
-  "include": ["src"], // Fichiers à compiler (tout dans src)
+  "include": ["src/**/*.ts"], // Fichiers à compiler (tout dans src)
   "exclude": ["node_modules", "dist"] // Fichiers/folders à ignorer
 }
