@@ -1,0 +1,26 @@
+name: Enhancement
+title: "[ENHANCEMENT] - "
+description: Proposer une amélioration ou une nouvelle fonctionnalité
+labels: ["enhancement"]
+assignees: ["FierensDev"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Exemple de titre : [ENHANCEMENT] - Ajouter un mode sombre
+  - type: textarea
+    id: description
+    attributes:
+      label: Describe the enhancement
+      description: Explain what you'd like to see improved or added, and why it would be useful.
+      placeholder: It would be great to add ... because ...
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com).
+      options:
+        - label: I agree to follow this project's Code of Conduct
